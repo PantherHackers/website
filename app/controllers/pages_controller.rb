@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   # GET /pages.json
   def index
     @pages = Page.all
+    # TODO return default page
   end
 
   # GET /pages/1
