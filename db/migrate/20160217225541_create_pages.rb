@@ -4,7 +4,6 @@ class CreatePages < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.datetime :updated
-      t.primary_key :id
 
       t.timestamps null: false
     end

@@ -4,7 +4,6 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.timestamp :posted
-      t.primary_key :id
       t.integer :author
 
       t.timestamps null: false

@@ -6,7 +6,6 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :start
       t.datetime :end
       t.timestamp :posted
-      t.primary_key :id
       t.integer :author
 
       t.timestamps null: false
