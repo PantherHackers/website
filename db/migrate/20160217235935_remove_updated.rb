@@ -1,8 +1,8 @@
 class RemoveUpdated < ActiveRecord::Migration
   def up
-    remove_column :posts, :updated
+    remove_column :pages, :updated
   end
   def down
-    add_column :posts, :updated, :datetime
+    add_column :pages, :updated, :datetime
   end
 end
