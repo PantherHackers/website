@@ -1,11 +1,9 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:show]
 
-  # GET /pages
-  # GET /pages.json
-  def index
-    @pages = Page.all
-    # TODO return default page
+  # GET /
+  def default
+    @page = Page.where(title: 'Home')
   end
 
   # GET /pages/1
