@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hackathons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Highschool</th>
+      <th>Logo</th>
+      <th>Site</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hackathons.each do |hackathon| %>
+      <tr>
+        <td><%= hackathon.name %></td>
+        <td><%= hackathon.date %></td>
+        <td><%= hackathon.location %></td>
+        <td><%= hackathon.highschool %></td>
+        <td><%= hackathon.logo %></td>
+        <td><%= hackathon.site %></td>
+        <td><%= link_to 'Show', hackathon %></td>
+        <td><%= link_to 'Edit', edit_hackathon_path(hackathon) %></td>
+        <td><%= link_to 'Destroy', hackathon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hackathon', new_hackathon_path %>

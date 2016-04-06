@@ -1,0 +1,41 @@
+<%= form_for(@hackathon) do |f| %>
+  <% if @hackathon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hackathon.errors.count, "error") %> prohibited this hackathon from being saved:</h2>
+
+      <ul>
+      <% @hackathon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :highschool %><br>
+    <%= f.check_box :highschool %>
+  </div>
+  <div class="field">
+    <%= f.label :logo %><br>
+    <%= f.text_field :logo %>
+  </div>
+  <div class="field">
+    <%= f.label :site %><br>
+    <%= f.text_field :site %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

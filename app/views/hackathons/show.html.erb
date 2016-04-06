@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hackathon.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @hackathon.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @hackathon.location %>
+</p>
+
+<p>
+  <strong>Highschool:</strong>
+  <%= @hackathon.highschool %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @hackathon.logo %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @hackathon.site %>
+</p>
+
+<%= link_to 'Edit', edit_hackathon_path(@hackathon) %> |
+<%= link_to 'Back', hackathons_path %>
