@@ -1,0 +1,28 @@
+body{
+	background: #30beee
+}
+div.header{
+	background-color: #2f302f;
+	font-size: 20px;
+}
+span.Links{
+	float:right;
+}
+h1{
+	color: #ffffff;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+div.footer{
+	padding-top: 5px;
+	background-color: #2f302f;
+}
+div.Copywrite{
+	color: #aaabab;
+}
+#map{
+	width:80%;
+	height:45%;
+}

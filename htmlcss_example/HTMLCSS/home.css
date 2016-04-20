@@ -1,0 +1,78 @@
+div.header{
+	padding: 20px;
+	background-color: #2f302f;
+	font-size: 12px;
+}
+span.Links{
+	float:right;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+h1.Title1{
+	font-size: 31px;
+}
+h1.Title2{
+	font-size: 31px;
+}
+h1.Title3{
+	font-size: 31px;
+}
+span.img1{
+	padding-right: 20px;
+	-ms-transform:translate(0px,-75px);
+	-webkit-transform:translate(0px,-75px);
+	-moz-transform:translate(0px,-75px);
+}
+span.img2{
+	padding-left: 20px;
+	-ms-transform:translate(0px,-75px);
+	-webkit-transform:translate(0px,-75px);
+	-moz-transform:translate(0px,-75px);
+}
+span.img3{
+	padding-right: 20px;
+	-ms-transform:translate(0px,-75px);
+	-webkit-transform:translate(0px,-75px);
+	-moz-transform:translate(0px,-75px);
+}
+p.para1{
+	font-size: 21px;
+	text-align: center-right;
+}
+p.para2{
+	font-size: 21px;
+	text-align: center-left;
+}
+p.para3{
+	font-size: 21px;
+	text-align: center-right;
+}
+h3{
+	font-size: 32px;
+	color: #30beee;
+}
+div.Copywrite{
+	color: #aaabab;
+}
+div.content1{
+	padding-top: 25px;
+	background-color: #ffffff;
+	padding-bottom: 25px;
+}
+div.content2{
+	padding-top: 25px;
+	background-color: #f1f1f1;
+	padding-bottom: 25px;
+}
+div.content3{
+	padding-top: 25px;
+	background-color: #ffffff;
+	padding-bottom: 25px;
+}
+div.footer{
+	padding-top: 5px;
+	background-color: #2f302f;
+}
