@@ -1,0 +1,123 @@
+
+//*******************************Variables*******************************
+$dark-grey: #2E2F2F;
+$light-grey: #EFF0F0;
+$light-blue: #34BDEE;
+$button-color: #E52749;
+$white: #FFF;
+//*******************************Universal Stylings***************************
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li{
+		display: inline-block;
+	}
+}
+h2{
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+a{
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-align: center;
+	color: $white;
+}
+//*******************************Navigation Styings***************************
+.nav-bar{
+	float: right;
+}
+.nav{
+	span{
+		font-size: 2rem;
+	}
+	ul{
+		
+		padding: 0.25rem 0;
+		background-color: $dark-grey;
+		width: 100%;
+		float: right;
+
+		li{
+			font-size: 1.5rem;
+			font-weight: 900;
+			float: left;
+			text-align: center;
+			padding: 1rem;
+			color: $white;
+
+		}
+	}
+}
+//*******************************Content Styings************************
+
+.content{
+
+	padding: 3.5rem;
+	background-color: $light-blue;
+
+	h1{
+		color: $white;
+		text-align: center;
+		font-size: 4.5rem;
+	}
+
+
+	ul{
+		border-radius: 1rem;
+		padding: 0 12.5%;
+		width: 75%;
+		li{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			background-color: $white;
+
+			&:first-child{
+				border-radius: 0.25rem 0.25rem 0 0;
+			}
+			&:nth-child(2n) {
+       			background-color: $light-grey;
+      		}
+			&:last-child{
+				border-radius: 0 0 0.25rem 0.25rem;
+			}
+
+			.date{
+				float: left;
+				height: 256px;
+				width: 20%;
+				background-color: #F00;
+			}
+			.description{
+				height: 256px;
+				background-color: #0F0;
+				width: 60%;
+				float: left;		
+			}
+			.view{
+				height: 256px;
+				text-align: center;
+				vertical-align: middle;
+				line-height: 256px;
+				float: left;
+				background-color: #00F;
+				width: 20%;
+			}
+		}
+	}
+}
+
+//***************************************Button*******************
+.button{
+	background-color: $button-color;
+	font-size: 1.5rem;
+	padding: 0.4rem 0.6rem ;
+	border-radius: 0.2rem;
+	font-weight: 700;
+}

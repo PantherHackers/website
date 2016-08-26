@@ -1,0 +1,87 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  ul li {
+    display: inline-block; }
+
+h2 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF; }
+
+.nav-bar {
+  float: right; }
+
+.nav span {
+  font-size: 2rem; }
+.nav ul {
+  padding: 0.25rem 0;
+  background-color: #2E2F2F;
+  width: 100%;
+  float: right; }
+  .nav ul li {
+    font-size: 1.5rem;
+    font-weight: 900;
+    float: left;
+    text-align: center;
+    padding: 1rem;
+    color: #FFF; }
+
+.content {
+  padding: 3.5rem;
+  background-color: #34BDEE; }
+  .content h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 4.5rem; }
+  .content ul {
+    border-radius: 1rem;
+    padding: 0 12.5%;
+    width: 75%; }
+    .content ul li {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: #FFF; }
+      .content ul li:first-child {
+        border-radius: 0.25rem 0.25rem 0 0; }
+      .content ul li:nth-child(2n) {
+        background-color: #EFF0F0; }
+      .content ul li:last-child {
+        border-radius: 0 0 0.25rem 0.25rem; }
+      .content ul li .date {
+        float: left;
+        height: 256px;
+        width: 20%;
+        background-color: #F00; }
+      .content ul li .description {
+        height: 256px;
+        background-color: #0F0;
+        width: 60%;
+        float: left; }
+      .content ul li .view {
+        height: 256px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 256px;
+        float: left;
+        background-color: #00F;
+        width: 20%; }
+
+.button {
+  background-color: #E52749;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  font-weight: 700; }
+
+/*# sourceMappingURL=calendar.css.map */
