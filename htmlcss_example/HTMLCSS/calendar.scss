@@ -57,8 +57,8 @@ a{
 //*******************************Content Styings************************
 
 .content{
-
-	padding: 3.5rem;
+	padding-top: 3.5rem;
+	height: 100vh;
 	background-color: $light-blue;
 
 	h1{
@@ -66,12 +66,14 @@ a{
 		text-align: center;
 		font-size: 4.5rem;
 	}
-
+	span{
+		font-size: 200%;
+	}
 
 	ul{
 		border-radius: 1rem;
-		padding: 0 12.5%;
-		width: 75%;
+		padding: 0 17.5%;
+		width: 65%;
 		li{
 			width: 100%;
 			padding: 0;
@@ -79,26 +81,38 @@ a{
 			background-color: $white;
 
 			&:first-child{
-				border-radius: 0.25rem 0.25rem 0 0;
+				border-radius: 1rem 1rem 0 0;
 			}
 			&:nth-child(2n) {
        			background-color: $light-grey;
       		}
 			&:last-child{
-				border-radius: 0 0 0.25rem 0.25rem;
+				border-radius: 0 0 1rem 1rem;
 			}
 
 			.date{
 				float: left;
 				height: 256px;
 				width: 20%;
-				background-color: #F00;
+				text-align: center;
+				font-size: 1.5em;
+				h3{
+					font-size: 1.5em;
+					margin: 20% 0;
+				}
 			}
 			.description{
 				height: 256px;
-				background-color: #0F0;
 				width: 60%;
-				float: left;		
+				float: left;	
+				h2{
+					font-size: 2em;
+					padding: 1.5rem 0 0 1.5rem;
+				}	
+				p{
+					padding: 0.5rem 1.5rem;
+					font-size: 1.25em;
+				}
 			}
 			.view{
 				height: 256px;
@@ -106,7 +120,6 @@ a{
 				vertical-align: middle;
 				line-height: 256px;
 				float: left;
-				background-color: #00F;
 				width: 20%;
 			}
 		}
@@ -118,6 +131,6 @@ a{
 	background-color: $button-color;
 	font-size: 1.5rem;
 	padding: 0.4rem 0.6rem ;
-	border-radius: 0.2rem;
+	border-radius: 0.3rem;
 	font-weight: 700;
 }
