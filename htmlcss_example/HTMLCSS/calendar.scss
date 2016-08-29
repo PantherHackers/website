@@ -6,6 +6,7 @@ $light-blue: #34BDEE;
 $button-color: #E52749;
 $white: #FFF;
 //*******************************Universal Stylings***************************
+//trying to just normalize some of the bullshit default css things to 0
 ul{
 	margin: 0;
 	padding: 0;
@@ -29,9 +30,11 @@ a{
 	color: $white;
 }
 //*******************************Navigation Styings***************************
+//Do we want a fixed nav bar? if so we need to make some changes
 .nav-bar{
 	float: right;
 }
+
 .nav{
 	span{
 		font-size: 2rem;
@@ -41,6 +44,7 @@ a{
 		padding: 0.25rem 0;
 		background-color: $dark-grey;
 		width: 100%;
+		//float right with li's floating left was the best way I could find to make the 1________1_1_1 structure
 		float: right;
 
 		li{
@@ -57,7 +61,12 @@ a{
 //*******************************Content Styings************************
 
 .content{
+	//ISSUE ***** want to fix this padding-top. at the moment removing this fucks up the nav and pulls it down...? This also is padding from the top- not from the nav div RIGHT above it.
+	//		*****I assume this is something simmple that I just dont know, but a fix would be appreciated!
 	padding-top: 3.5rem;
+
+	//Was trying to do the height in a way that the background of the wholeeee content section would be blue and fit EXACTLY the length of the screen it is viewed on
+	//At the moment this is not working. I think it may be better to just set the whole pages background to this blue so we dont have to worry about the spacing, but again- not sure.
 	height: 100vh;
 	background-color: $light-blue;
 
@@ -79,17 +88,18 @@ a{
 			padding: 0;
 			margin: 0;
 			background-color: $white;
-
+//	***** Makes the top and bottom rounded a bit more than in the design, but i couldnt notice anything less
 			&:first-child{
 				border-radius: 1rem 1rem 0 0;
 			}
+//	***** Makes it so every other li is grey
 			&:nth-child(2n) {
        			background-color: $light-grey;
       		}
 			&:last-child{
 				border-radius: 0 0 1rem 1rem;
 			}
-
+//	***** This stuff is a bit looks a bit ugly, I know.... Sorry! 
 			.date{
 				float: left;
 				height: 256px;
@@ -127,6 +137,7 @@ a{
 }
 
 //***************************************Button*******************
+//We may want to make this into two different classes so we can reuse the same button style without having it red
 .button{
 	background-color: $button-color;
 	font-size: 1.5rem;
