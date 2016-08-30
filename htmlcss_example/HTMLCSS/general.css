@@ -46,6 +46,14 @@ a {
     font-size: 4.5rem; }
   .content span {
     font-size: 200%; }
+  .content .attending-paw {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(../images/paw.jpg);
+    width: 161px;
+    height: 206px;
+    padding-right: 161px; }
   .content ul {
     border-radius: 1rem;
     padding: 0 17.5%;
@@ -61,26 +69,26 @@ a {
         background-color: #EFF0F0; }
       .content ul li:last-child {
         border-radius: 0 0 1rem 1rem; }
-      .content ul li .date {
+      .content ul li .left {
         float: left;
         height: 256px;
         width: 20%;
         text-align: center;
         font-size: 1.5em; }
-        .content ul li .date h3 {
+        .content ul li .left h3 {
           font-size: 1.5em;
           margin: 20% 0; }
-      .content ul li .description {
+      .content ul li .body {
         height: 256px;
         width: 60%;
         float: left; }
-        .content ul li .description h2 {
+        .content ul li .body h2 {
           font-size: 2em;
           padding: 1.5rem 0 0 1.5rem; }
-        .content ul li .description p {
+        .content ul li .body p {
           padding: 0.5rem 1.5rem;
           font-size: 1.25em; }
-      .content ul li .view {
+      .content ul li .right {
         height: 256px;
         text-align: center;
         vertical-align: middle;
@@ -95,4 +103,4 @@ a {
   border-radius: 0.3rem;
   font-weight: 700; }
 
-/*# sourceMappingURL=calendar.css.map */
+/*# sourceMappingURL=general.css.map */

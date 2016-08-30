@@ -78,6 +78,15 @@ a{
 	span{
 		font-size: 200%;
 	}
+	.attending-paw{
+		display: block;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background: url(../images/paw.jpg);
+		width:161px;
+		height:206px;
+		padding-right:161px;
+	}
 
 	ul{
 		border-radius: 1rem;
@@ -100,7 +109,7 @@ a{
 				border-radius: 0 0 1rem 1rem;
 			}
 //	***** This stuff is a bit looks a bit ugly, I know.... Sorry! 
-			.date{
+			.left{
 				float: left;
 				height: 256px;
 				width: 20%;
@@ -111,7 +120,7 @@ a{
 					margin: 20% 0;
 				}
 			}
-			.description{
+			.body{
 				height: 256px;
 				width: 60%;
 				float: left;	
@@ -124,7 +133,10 @@ a{
 					font-size: 1.25em;
 				}
 			}
-			.view{
+
+			//All that is left for hackathons is to add the paw print for attending/not attending
+			//
+			.right{
 				height: 256px;
 				text-align: center;
 				vertical-align: middle;
