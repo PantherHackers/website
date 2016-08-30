@@ -1,37 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Hackathons</h1>
+<div class="content">
+  <h1>EVENTS</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Date</th>
-      <th>Location</th>
-      <th>Highschool</th>
-      <th>Logo</th>
-      <th>Site</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <ul>
     <% @hackathons.each do |hackathon| %>
-      <tr>
-        <td><%= hackathon.name %></td>
-        <td><%= hackathon.date %></td>
-        <td><%= hackathon.location %></td>
-        <td><%= hackathon.highschool %></td>
-        <td><%= hackathon.logo %></td>
-        <td><%= hackathon.site %></td>
-        <td><%= link_to 'Show', hackathon %></td>
-        <td><%= link_to 'Edit', edit_hackathon_path(hackathon) %></td>
-        <td><%= link_to 'Destroy', hackathon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Hackathon', new_hackathon_path %>
+      <% unless hackathon.highschool %>
+        <li>
+         <div class="left">
+           <h3><%=hackathon.date%></h3>
+        </div>
+        <div class="body">
+          <h2><%="#{hackathon.name}//#{hackathon.location}"%></h2>
+          <p>This is a hackathon!</p>
+        </div>
+        <%=link_to "RSVP", hackathon.site, :class => "button" %>
+      </li>
+      <%end%>
+    <%end%>
+  </ul>
+  <%= link_to 'New Hackathon', new_hackathon_path %>
+</div>
