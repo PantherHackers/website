@@ -1,0 +1,9 @@
+//***************************************Button*******************
+//We may want to make this into two different classes so we can reuse the same button style without having it red
+.button{
+	background-color: $button-color;
+	font-size: 1.5rem;
+	padding: 0.4rem 0.6rem ;
+	border-radius: 0.3rem;
+	font-weight: 700;
+}

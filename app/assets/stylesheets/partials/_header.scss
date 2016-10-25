@@ -1,0 +1,35 @@
+//*******************************Variables*******************************
+$dark-grey: #2E2F2F;
+$light-grey: #EFF0F0;
+$light-blue: #34BDEE;
+$button-color: #E52749;
+$white: #FFF;
+//*******************************Navigation Styings***************************
+//Do we want a fixed nav bar? if so we need to make some changes
+.nav-bar{
+	float: right;
+}
+
+.nav{
+	span{
+		font-size: 2rem;
+	}
+	ul{
+		
+		padding: 0.25rem 0;
+		background-color: $dark-grey;
+		width: 100%;
+		//float right with li's floating left was the best way I could find to make the 1________1_1_1 structure
+		float: right;
+
+		li{
+			font-size: 1.5rem;
+			font-weight: 900;
+			float: left;
+			text-align: center;
+			padding: 1rem;
+			color: $white;
+
+		}
+	}
+}

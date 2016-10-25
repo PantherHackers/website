@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
-
 <div class="content">
-  <h1>EVENTS</h1>
-
+  <h1>Hackathons</h1>
   <ul>
     <% @hackathons.each do |hackathon| %>
-      <% unless hackathon.highschool %>
+      <% unless hackathon.highschool%>
         <li>
          <div class="left">
            <h3><%=hackathon.date%></h3>
@@ -14,7 +12,9 @@
           <h2><%="#{hackathon.name}//#{hackathon.location}"%></h2>
           <p>This is a hackathon!</p>
         </div>
-        <%=link_to "RSVP", hackathon.site, :class => "button" %>
+        <div class="right">
+          <%=link_to "RSVP", hackathon.site, :class => "button" %>
+        </div>
       </li>
       <%end%>
     <%end%>

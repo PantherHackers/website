@@ -1,0 +1,25 @@
+//*******************************Universal Stylings***************************
+//trying to just normalize some of the bullshit default css things to 0
+body
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li{
+		display: inline-block;
+	}
+}
+h2{
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+a{
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-align: center;
+	color: $white;
+}

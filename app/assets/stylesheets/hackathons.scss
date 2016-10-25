@@ -1,68 +1,12 @@
-// Place all the styles related to the Hackathons controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-//*******************************Variables*******************************
 $dark-grey: #2E2F2F;
 $light-grey: #EFF0F0;
 $light-blue: #34BDEE;
 $button-color: #E52749;
 $white: #FFF;
-//*******************************Universal Stylings***************************
-//trying to just normalize some of the bullshit default css things to 0
-ul{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-
-	li{
-		display: inline-block;
-	}
+//Hackathon Stylings
+body{
+	background-color: $light-blue;
 }
-h2{
-	margin: 0;
-}
-p{
-	margin: 0;
-}
-a{
-	border: none;
-	outline: none;
-	text-decoration: none;
-	text-align: center;
-	color: $white;
-}
-//*******************************Navigation Styings***************************
-//Do we want a fixed nav bar? if so we need to make some changes
-.nav-bar{
-	float: right;
-}
-
-.nav{
-	span{
-		font-size: 2rem;
-	}
-	ul{
-		
-		padding: 0.25rem 0;
-		background-color: $dark-grey;
-		width: 100%;
-		//float right with li's floating left was the best way I could find to make the 1________1_1_1 structure
-		float: right;
-
-		li{
-			font-size: 1.5rem;
-			font-weight: 900;
-			float: left;
-			text-align: center;
-			padding: 1rem;
-			color: $white;
-
-		}
-	}
-}
-//*******************************Content Styings************************
-
 .content{
 	//ISSUE ***** want to fix this padding-top. at the moment removing this fucks up the nav and pulls it down...? This also is padding from the top- not from the nav div RIGHT above it.
 	//		*****I assume this is something simmple that I just dont know, but a fix would be appreciated!
@@ -70,9 +14,6 @@ a{
 
 	//Was trying to do the height in a way that the background of the wholeeee content section would be blue and fit EXACTLY the length of the screen it is viewed on
 	//At the moment this is not working. I think it may be better to just set the whole pages background to this blue so we dont have to worry about the spacing, but again- not sure.
-	height: 100vh;
-	background-color: $light-blue;
-
 	h1{
 		color: $white;
 		text-align: center;
@@ -95,6 +36,7 @@ a{
 		border-radius: 1rem;
 		padding: 0 17.5%;
 		width: 65%;
+		display: inline-block;
 		li{
 			width: 100%;
 			padding: 0;
@@ -149,14 +91,4 @@ a{
 			}
 		}
 	}
-}
-
-//***************************************Button*******************
-//We may want to make this into two different classes so we can reuse the same button style without having it red
-.button{
-	background-color: $button-color;
-	font-size: 1.5rem;
-	padding: 0.4rem 0.6rem ;
-	border-radius: 0.3rem;
-	font-weight: 700;
 }

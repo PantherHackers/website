@@ -46,6 +46,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Want to have this for authentication decoupled from actual user data
+gem 'devise'
 
-# For deh users
-gem 'devise', github: 'plataformatec/devise'
+# This is the gem used to allow me to render the markdown in each blog post
+gem 'redcarpet', '~> 3.0.0'

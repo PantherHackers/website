@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blogs</h1>
+<hr />
+<% @blogs.each do |post| %>
+  <h1><%= link_to post.title, post %></h1>
+  
+  <p>
+    <%= markdown(post.body) %>
+  </p>
+  <h5>Published <%= time_ago_in_words post.created_at %> ago</h5>
+
+  <% if post != @blogs.last %>
+  <hr />
+  <% end %>
+<% end %>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
